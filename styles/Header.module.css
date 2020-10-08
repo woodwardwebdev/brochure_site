@@ -1,0 +1,93 @@
+/* Fairview Blue - #16469f */
+
+.wire {
+    border: 1px solid black
+}
+
+.root {}
+
+.contact {
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: #16469f;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.contactItem {
+display: flex;
+align-items: center;
+margin: 0 1rem
+}
+
+.navbar {
+display: flex;
+align-items: center;
+padding: 0 4rem
+}
+
+.imgLink:hover {
+    cursor: pointer;
+}
+  
+
+.navbarNav {
+    margin-left: auto;
+}
+
+.navbarList {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+}
+
+.navbarItem {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    height: 30px
+    
+}
+
+.navbarItem:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #16469f;
+}
+
+.dropdownNav {
+    position: relative;
+   
+}
+
+.dropdownContent {
+    position: absolute;
+    list-style: none;
+    display: none;
+    background-color: white;
+    z-index: 1200;
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.4);
+    
+    
+}
+
+
+.dropdownItem {
+    display: block;
+    height: 60px;
+    padding: 20px 10px;
+ 
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #16469f;
+}
+
+.navbar {
+    transition: all 1s linear;
+}
+
+.dropdownNav:hover .dropdownContent {display: block;}

@@ -1,123 +1,210 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+
+.paddedContainer {
+  width: 70%
+}
+
+.heroImage {
+  min-height: 80vh;
+  /* padding: 8rem 0; */
+  background: url('/img/herodark.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.splashContent {
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
-  align-items: center;
+  width: 50%;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
+.mainHeader {
+  font-family: 'Dosis';
+  font-weight: 300;
   font-size: 4rem;
 }
 
-.title,
-.description {
+.ctaBtn {
+  margin: 1rem auto;
+  max-width: 250px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  background-color: #16469f;
+  color: white;
+  border-radius: 3px;
+}
+
+.twoColLayout {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2Col1{
+padding: 0 4rem 0 4rem
+}
+
+.stackedImgDiv {
+  background: url('../public/img/teamblue.jpg');
+  height: 55vh;
+}
+
+.stackedImg {
+  position: relative;
+  right: 7%;
+  top: 5%;
+  max-height: 50vh
+}
+
+.whyChooseSection {
+  background: url('../public/img/homedark.jpg');
+  background-attachment: fixed;
+}
+
+.chooseHeader {
+  color: white;
+  text-align: center;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.threeColGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.whiteBgCol {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.blueTop {
+  border-top: 5px solid #16469f ;
+}
+
+.whiteBgCol h3 {
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.sellInfoSection {
+  padding: 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  text-align: center;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.sellInfoSection h2 {
+  text-transform: uppercase;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.sellInfoText {
+  width: 70%
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.sellInfoGrid {
+
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.imgBreakSection {
+  min-height: 80vh;
+  background: url('../public/img/imgbreak.jpg');
+  background-size: cover;
 }
 
-.logo {
-  height: 1em;
+.buyBusinessSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
+.valuesSection {
+  min-height: 50vh;
+  background: url('../public/img/valuesbgdark.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.sixtyContainer {
+  width: 60%;
+  text-align: center;
+}
+
+.ourApproachSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourByTwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.contactSection {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.contactWhiteLogo {
+  width: 300px
+}
+
+.contactSection ul {
+  /* padding: 0; */
+}
+
+.contactSection li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.socialIcon {
+  padding: 20px
+}
+
+@media (max-width: 960px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+  .threeColGrid, .fourByTwoCol {
+    grid-template-columns: 1fr;
+  }
 }
+
