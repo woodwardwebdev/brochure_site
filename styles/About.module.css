@@ -1,0 +1,74 @@
+.aboutContainer {
+
+}
+
+.hero {
+        min-height: 40vh;
+        background: url('/img/workhard.jpeg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        border-bottom: 5px solid #16469f;
+}
+
+.title {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0,0,0,0.8);
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.twoCols {
+    margin: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.threeCols {
+    margin: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridItem {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridImg {
+    width: 100%;
+}
+
+.spacer {
+    height: 30vh;
+    margin: 4rem 0;
+    background: linear-gradient(to right, #16469f, #1952bb, #16469f);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.spacer2 {
+    height: 30vh;
+    margin: 4rem 0;
+    background: linear-gradient(to right, #16469f, #1952bb, #16469f);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.spacer3 {
+    margin-top: 4rem;
+    height: 10vh;
+    background: linear-gradient(to right, #16469f, #1952bb, #16469f);
+}
+
+@media (max-width: 960px){
+    .twoCols, .threeCols {
+        grid-template-columns: 1fr;
+    }
+}

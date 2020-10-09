@@ -1,15 +1,11 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>UK Business Brokers | Buy & Sell Your Business | Stone Fairview</title>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet"></link>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
       <header className={styles.header}>
         <Header />
       </header>
@@ -19,12 +15,10 @@ export default function Home() {
 
         <section className={styles.heroImage}>
           <div className={styles.splashContent}>
-            <h1 className={styles.mainHeader}>UK BUSINESS BROKERS</h1>
-            <h5>Discover The Future Of Business Sales</h5>
+            <h1 className={styles.mainHeader}>Business Brochure Site</h1>
+            <h5>Snappy Business Subtitle</h5>
             <p>
-              If you want to sell your business, then you can trust Stone Fairview to help
-              As an award winning agent, we combine cutting-edge technology with decades of experience
-              to find the perfect buyer for your business
+              Tagline to explain what our business does best
             </p>
             <button className={styles.ctaBtn}>Make an Enquiry</button>
           </div>
@@ -35,70 +29,76 @@ export default function Home() {
         <section className={styles.twoColLayout}>
 
           <div className={styles.section2Col1}>
-            <h2>Expert Business Brokers That You Can Trust</h2>
+            <h2>Expert Business Brochure</h2>
             <p>
-              Drawing on Years of Experience, the professionals at Stone Fairview stand ready to guide you
-              through the process of selling your company or business - no matter what stage you are at.
-              With our state-of-the-art technology and traditional values, you can be sure that your sale will be a success.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+              semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
             </p>
             <p>
-              From Large corporate structures to family firms that are years in the making, we know that building a
-              business is hard work - so let us help you to achieve the best possible outcome from your exit strategy
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum. Donec a dolor erat.
             </p>
-            <button className={styles.ctaBtn} >Sell Your Business</button>
+            <button className={styles.ctaBtn} >CLICK ME</button>
           </div>
           <div className={styles.section2Col1}>
-            <div className={styles.stackedImgDiv}>
-              <img src='/img/businessmen.jpg' alt='business men' className={styles.stackedImg} />
-            </div>
+            <img src='/img/businessmen.jpeg' alt='business men' className={styles.stackedImg} />
           </div>
         </section>
 
-        {/* Why Choose Stone Fairview section */}
+        {/* Why Choose Us section */}
         <section className={styles.whyChooseSection}>
           <div className={styles.chooseHeader}>
-            <h2>Why Choose Stone Fairview?</h2>
+            <h2>LOREM IPSUM</h2>
           </div>
           <div className={styles.threeColGrid}>
             <div className={`${styles.whiteBgCol} ${styles.whyChooseCol1} ${styles.blueTop}`}>
-              <h3>SELL A COMPANY</h3>
-              <p>We understand that selling a company can prove challenging even to the most seasoned commercial professionals.
-              That’s why Stone Fairview’s team of company sale specialists are constantly improving their knowledge of the
-              corporate market whilst expanding their network of potential buyers across international borders.
+              <h3>CONSECTETUR</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
              </p>
               <p>
-                From complex company structures to expansive corporations, we keep ourselves in the detail and are proud of our
-                thorough due diligence process. From marketing to negotiations, hands on involvement is our calling card and we
-                are committed to providing a service that truly recognises, develops, and delivers on the exceptional value of
-                the companies that we sell.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
              </p>
-              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>Sell Your Business</button>
+              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>Click Me</button>
             </div>
             <div className={`${styles.whiteBgCol} ${styles.whyChooseCol2} ${styles.blueTop}`}>
-              <h3>WE BROKER YOUR SALE</h3>
+              <h3>MAGNA ALIQUET LACUS</h3>
               <p>
-                However big your organisation is, Stone Fairview can help you to sell it. Our proprietary SFX technology matches you,
-                the seller, with eligible buyers all over the world. We also leverage our curated list of buyers and investors who are
-                ready to take over the reins and let you move on to your next project.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum. Donec a dolor erat.
               </p>
               <p>
-                As the trusted partner of hundreds of owners and entrepreneurs, our business broker service will help you to realise the
-                potential of the assets that you have built up. Speak with our experts today to understand more about how our business
-                brokerage service can assist you with selling a company or business.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
-              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>Sell Your Business</button>
+              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>Click Me</button>
             </div>
             <div className={`${styles.whiteBgCol} ${styles.whyChooseCol3} ${styles.blueTop}`}>
-              <h3>SELL YOUR BUSINESS</h3>
-              <p>To sell a business is a big decision; we’re here to support you from the very beginning. From advising you on how to set
-              the price through to finding a new owner, and helping you seal the deal, Stone Fairview will work to achieve your aim.
+              <h3>MAGNA SEMPER</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum.
               </p>
               <p>
-                We make the daunting task of selling your small business into a hassle-free process that will fulfil the promise of the
-                future you’re looking for. With our help, you will be able to sell your successful business using our network of contacts,
-                bespoke technology, and market-leading expertise.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
-              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>Sell Your Business</button>
+              <button className={styles.ctaBtn} style={{ marginTop: 'auto' }}>CLICK ME</button>
             </div>
           </div>
         </section>
@@ -107,44 +107,50 @@ export default function Home() {
 
         <section className={styles.sellInfoSection}>
           <div className={styles.sellInfoText}>
-            <h2>Sell your business with brokers you can rely on</h2>
+            <h2>Descriptive Large Headline</h2>
             <p>
-              We know the work that goes into creating and growing an idea into a successful operation. Once you've
-              reached the point to move on to the next challenge, Stone Fairview will work with you to find the right
-              person to take over the reins and buy your business for the right price.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+              semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
         </p>
             <p>
-              Whether you've built up your company with an eye on selling up from the outset, or have poured your career
-              into a family firm, we're here to maximise your profit from the sale. Decades of experience in helping owners
-              sell their business means we are equipped, ready and confident to facilitate the best deal for you.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+              semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
         </p>
-            <h2>A technology business with the personal touch</h2>
+
           </div>
-          <div className={styles.threeColGrid}>
-            <div className={styles.whiteBgCol}>
-              <h5>SFX</h5>
-              <p>
-                SFX is our proprietary platform that combines machine learning and AI to search global markets
-                for the ideal buyer for your business
+
+          <div className={styles.colsContain}>
+            <h2>Three Columns Of Interest</h2>
+            <div className={styles.threeColGrid}>
+              <div className={styles.whiteBgCol}>
+                <h5>BACON</h5>
+                <p>
+                  Bacon is one of the greatest things known to humankind. It has a place on many tables, with many people
+                  swearing by it's healing properties.
               </p>
-            </div>
-            <div className={styles.whiteBgCol}>
-              <h5>SF ASSOCIATES</h5>
-              <p>
-                We've curated a network comprised of thousands of international brokers, each specialising in
-                certain sectors, giving our clients instant access to millions of potential buyers
+              </div>
+              <div className={styles.whiteBgCol}>
+                <h5>CHORIZO</h5>
+                <p>
+                  Rich in paprika and health benefits, chorizo can be eaten for every single meal without any sort
+                  of adverse effect. This has not been verified with a medial professional though.
               </p>
-            </div>
-            <div className={styles.whiteBgCol}>
-              <h5>TALENT</h5>
-              <p>
-                We invest heavily in our team and only hire the best talent, which allows us to deliver the award
-                winning level of service we have become renowned for
+              </div>
+              <div className={styles.whiteBgCol}>
+                <h5>YORKSHIRE</h5>
+                <p>
+                  The perfect blend of crispy and mushy, with a delicious taste, yorkshires go with any roasted
+                  meal. Anyone that disagrees is clearly lacking in the taste department.
               </p>
+              </div>
             </div>
           </div>
           <div>
-            <button className={styles.ctaBtn} >Sell Your Business</button>
+            <button className={styles.ctaBtn} >Click Me</button>
           </div>
         </section>
 
@@ -158,45 +164,45 @@ export default function Home() {
           <div className={styles.paddedContainer}>
             <div className={styles.twoColLayout}>
               <div className={styles.col1}>
-                <h5>Buying a Business</h5>
+                <h3>Column One</h3>
                 <p>
-                  If you have ever wanted to start your business, now is the perfect opportunity. We understand your
-                  needs, and you are not alone - over 80% of people in the UK dream of being self-employed. Our goal
-                  is to help you along the way. At Stone Fairview, we know how risky it can be and why so many are
-                  reluctant to try their luck.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
                 <p>
-                  Fortunately, with our help you won't need to be an expert to be successful. We will help you each
-                  step of the way. First, we will present you with business opportunities for your need. But that's not
-                  all - our job goes well beyond merely finding a business opportunity. On the contrary, our experts are
-                  here to help you with everything you need to know about the dealm ensuring that you recieve accurate
-                  legal and financial advice.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
                 <p>
-                  Why buy an established business instead of starting your own? Over 60% of start-up companies fail in
-                  the first three years. On the other hand, already established businesses with a new owner show a
-                  significantly higher success rate.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
               </div>
               <div className={styles.col2}>
-                <h5>Buying a Business</h5>
+                <h3>Column Two</h3>
                 <p>
-                  If you have ever wanted to start your business, now is the perfect opportunity. We understand your
-                  needs, and you are not alone - over 80% of people in the UK dream of being self-employed. Our goal
-                  is to help you along the way. At Stone Fairview, we know how risky it can be and why so many are
-                  reluctant to try their luck.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
                 <p>
-                  Fortunately, with our help you won't need to be an expert to be successful. We will help you each
-                  step of the way. First, we will present you with business opportunities for your need. But that's not
-                  all - our job goes well beyond merely finding a business opportunity. On the contrary, our experts are
-                  here to help you with everything you need to know about the dealm ensuring that you recieve accurate
-                  legal and financial advice.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
                 <p>
-                  Why buy an established business instead of starting your own? Over 60% of start-up companies fail in
-                  the first three years. On the other hand, already established businesses with a new owner show a
-                  significantly higher success rate.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
               </p>
               </div>
             </div>
@@ -207,20 +213,21 @@ export default function Home() {
 
         <section className={styles.valuesSection}>
           <div className={styles.sixtyContainer}>
-            <h2>OUR VALUES AND GOALS</h2>
+            <h2>More Descriptive Text</h2>
             <p>
-              At Stone Fairview, we take care of our customers and ensure that both the buyer and seller are satisfied
-              with the deal. Stone Fairview will guide you each step of the business sale; whether you are looking to
-              buy a business, sell, or you need help with finances, we are here to help.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+              semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
         </p>
             <p>
-              We take pride in our team, and our main concern is our customers satisfaction. If you join us, you will
-              get an opportunity to work with a dynamic, modern, flexible and caring team that will help you strike
-              the best possible deal.
+              Proin sit amet diam sed risus consequat semper. Aliquam faucibus metus a blandit imperdiet.
+              Sed malesuada ipsum ac dolor tristique hendrerit.
         </p>
             <p>
-              We invest heavily in our team and only hire the most talented individuals, which allows us to deliver
-              the award-winning level of service we have become renowned for.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+              neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+              eget magna semper euismod eget in ipsum.
         </p>
           </div>
         </section>
@@ -229,92 +236,59 @@ export default function Home() {
         <section className={styles.ourApproachSection}>
           <div className={styles.sixtyContainer}>
             <div className={styles.approachIntroText}>
-              <h2>OUR APPROACH</h2>
+              <h2>Intro to Services</h2>
               <p>
-                Almost every business owner has considered selling at one point. Sometimes the reason is retirement,
-                desire to focus their interest on something new, or need for a change of scenery.
+                Proin sit amet diam sed risus consequat semper. Aliquam faucibus metus a blandit imperdiet.
+                Sed malesuada ipsum ac dolor tristique hendrerit.
           </p>
               <p>
-                Once you have joined us, you will be able to access our proprietary platform (SFX). Our finest experts
-                designed SFX as a way to create a pool of aquirers. It is a combination of AI and machine learning,
-                and will help us find you an ideal buyer.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                eget magna semper euismod eget in ipsum.
           </p>
               <p>
-                There are four key stages in our approach to selling a business.
+                Proin sit amet diam sed risus consequat semper.
               </p>
             </div>
             <div className={styles.fourByTwoCol}>
               <div className={styles.approachCol}>
-                <h5>Evaluate</h5>
+                <h5>Lorem</h5>
                 <p>
-                  To ensure the everything goes smoothly, we will evaluate your business. Our goal is to fully
-                  understand your values, how you trade and the services you offer. That way, we can create a strategy
-                  tailored just for you.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat.
                 </p>
               </div>
               <div className={styles.approachCol}>
-                <h5>Key Connections</h5>
+                <h5>Ipsum</h5>
                 <p>
-                  Thanks to our cutting-edge software, we have access to a vast network of potential buyers. That will
-                  allow us to easily connect you with parties that can do the best for your business, helping you make
-                  the necessary connections to ensure further growth.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat.
                 </p>
               </div>
               <div className={styles.approachCol}>
-                <h5>Showcase</h5>
+                <h5>Dolor</h5>
                 <p>
-                  Your success is also our success. We will showcase your business and bring forward unique selling
-                  points. The second stage will ensure that your business is unmissable to potential buyers. Our
-                  marketing experts will ensure that they fully understand your operation to create unique
-                  promotional strategies.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
                 </p>
               </div>
               <div className={styles.approachCol}>
-                <h5>The Close</h5>
+                <h5>Sit Amet</h5>
                 <p>
-                  We will cover every step of the process, and you will not have to deal with anything alone. With
-                  dependable negotiators, you will have full support through the entire process. In short, we are
-                  commited to managing every area of the transaction to pave the way for a smooth, succesful result.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et magna libero. Ut egestas,
+                  neque nec vehicula fringilla, est magna aliquet lacus, ut tempor tellus urna vel ante. Duis sit amet est
+                  eget magna semper euismod eget in ipsum. Donec a dolor erat. Proin sit amet diam sed risus consequat
+                  semper. Aliquam faucibus metus a blandit imperdiet. Sed malesuada ipsum ac dolor tristique hendrerit.
                 </p>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-
-        <section className={styles.contactSection}>
-          <div className={styles.paddedContainer}>
-            <div className={styles.threeColGrid}>
-              <div className={styles.contactCol}>
-                <img className={styles.contactWhiteLogo} src='/img/whiteLogo.png' />
-                <div className={styles.contactSocials}>
-                  <span className={styles.socialIcon}>Social 1</span>
-                  <span className={styles.socialIcon}>Social 2</span>
-                  <span className={styles.socialIcon}>Social 3</span>
-                </div>
-              </div>
-              <div className={styles.contactCol}>
-                <h5>Important Links</h5>
-                <ul>
-                  <li>Terms & Conditions</li>
-                  <li>Cookie Policy</li>
-                  <li>Privacy Policy</li>
-                  <li>Sitemap</li>
-                </ul>
-              </div>
-              <div className={styles.contactCol}>
-                <h5>Contact Us</h5>
-                <ul>
-                  <li>01908 464280</li>
-                  <li>info@stonefairview.co.uk</li>
-                  <li>The Store, New Street, Stony Stratford Milton Keynes MK11 1BW</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <Footer />
       </main>
 
       <footer className={styles.footer}>

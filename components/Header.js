@@ -1,16 +1,28 @@
 import React from 'react';
+import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Header.module.css'
 
 export default function Header() {
 
+    const [open, setOpen] = React.useState(false)
+
+    const toggleOpen = () => {
+        setOpen(!open)
+    }
+
     return (
         <div className={styles.root}>
+            <Head>
+                <title>Brochure Site Example | Colin Woodward</title>
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"></link>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <div className={styles.contact}>
-                <span className={styles.contactItem}>
+                <span className={styles.permContactItem}>
                     email@emailaddress.com
                 </span>
-                <span className={styles.contactItem}>
+                <span className={styles.permContactItem}>
                     01110 123456
                 </span>
                 <span className={styles.contactItem}>
@@ -20,53 +32,58 @@ export default function Header() {
 
             <div className={styles.navbar}>
                 <div className={styles.navbarBrand}>
-                    <Link href='/'><img src='/img/croppedLogo.jpg' height='80px' className={styles.imgLink}></img></Link>
+                    <Link href='/'><div><h3 className={styles.imgLink}>Business Brand</h3></div></Link>
                 </div>
-                <div className={styles.navbarNav}>
+                <div className={styles.collapseIcon} onClick={toggleOpen}>
+                    &#9776;
+                </div>
+                <div className={styles.navbarCollapse}>
+                    <div className={styles.navbarNav}>
+                        <nav>
+                            <ul className={styles.navbarList}>
+                                <Link href='/about'>
+                                    <li className={styles.navbarItem}>
+                                        <a>About Us</a>
+                                    </li>
+                                </Link>
+                                <Link href='/blog'>
+                                    <li className={styles.navbarItem}>
+                                        <a>Blog</a>
+                                    </li>
+                                </Link>
+                                <Link href='/contact'>
+                                    <li className={styles.navbarItem}>
+                                        <a>Contact</a>
+                                    </li>
+                                </Link>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            {open ?
+                <div className={styles.navExpanded}>
                     <nav>
-                        <ul className={styles.navbarList}>
-                            <div className={styles.dropdownNav}>
-                                <li className={styles.navbarItem}>
-                                    Business Brokers
-                                </li>
-                                <div className={styles.dropdownContent}>
-                                    <span className={styles.dropdownItem}>
-                                        <Link href='/sell-my-business'>
-                                            <a>Sell My Business</a>
-                                        </Link>
-                                    </span>
-                                    <span className={styles.dropdownItem}>
-                                        <Link href='/sell-a-company'>
-                                            <a>Sell a Company</a>
-                                        </Link>
-                                    </span>
-                                </div>
-                            </div>
-                            <Link href='/about-sf'>
-                                <li className={styles.navbarItem}>
-                                    <a>About SF</a>
-                                </li>
-                            </Link>
-                            <Link href='/knowledge-base'>
-                                <li className={styles.navbarItem}>
-                                    <a>Knowledge Base</a>
+                        <ul>
+                            <Link href='/about'>
+                                <li className={styles.navbarExpandedItem}>
+                                    <a>About Us</a>
                                 </li>
                             </Link>
                             <Link href='/blog'>
-                                <li className={styles.navbarItem}>
+                                <li className={styles.navbarExpandedItem}>
                                     <a>Blog</a>
                                 </li>
                             </Link>
-                            <Link href='/contact-sf'>
-                                <li className={styles.navbarItem}>
+                            <Link href='/contact'>
+                                <li className={styles.navbarExpandedItem}>
                                     <a>Contact</a>
                                 </li>
                             </Link>
                         </ul>
                     </nav>
                 </div>
-            </div>
-
+                : null}
         </div>
     )
 }

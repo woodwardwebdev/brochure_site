@@ -1,0 +1,58 @@
+.contactSection {
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .contactSection h1 {
+      font-family: 'Dosis', sans-serif;
+  }
+
+  .contactSection li {
+    list-style: none;
+    margin: 1rem 0;
+  }
+
+  .paddedContainer {
+    width: 70%
+  }
+
+  .threeColGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .listNoPadding {
+    padding: 0;
+  }
+
+  .contactWhiteLogo {
+    width: 300px
+  }
+
+  .socialIcon {
+    padding: 20px;
+    color: white;
+  }
+  
+  .socialSVG {
+    fill: grey;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .socialSVG:hover {
+    fill: white
+  }
+
+  @media (max-width: 960px) {
+    .threeColGrid, .fourByTwoCol {
+        grid-template-columns: 1fr;
+      }
+  }

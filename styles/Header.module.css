@@ -1,8 +1,6 @@
 /* Fairview Blue - #16469f */
 
-.wire {
-    border: 1px solid black
-}
+
 
 .root {}
 
@@ -20,19 +18,45 @@
 .contactItem {
 display: flex;
 align-items: center;
-margin: 0 1rem
+margin: 0 1rem;
 }
+
+.permContactItem {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem
+ }
 
 .navbar {
 display: flex;
 align-items: center;
-padding: 0 4rem
+padding: 0 4rem;
+
 }
 
 .imgLink:hover {
     cursor: pointer;
 }
   
+.navbarCollapse {
+   margin-left: auto;
+}
+
+
+.collapseIcon {
+    margin-left: auto;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.collapseIcon:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
 
 .navbarNav {
     margin-left: auto;
@@ -57,37 +81,44 @@ padding: 0 4rem
     border-bottom: 2px solid #16469f;
 }
 
-.dropdownNav {
-    position: relative;
+.navExpanded {
+    flex-direction: column;
+    box-shadow: 1px -3px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1200;
+    align-items: center;
+    display: none;
    
 }
 
-.dropdownContent {
-    position: absolute;
+.navbarExpandedItem {
     list-style: none;
-    display: none;
-    background-color: white;
-    z-index: 1200;
-    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.4);
-    
+    margin: 10px;
+    padding: 5px;
+    height: 30px;
     
 }
 
-
-.dropdownItem {
-    display: block;
-    height: 60px;
-    padding: 20px 10px;
- 
-}
-
-.dropdownItem:hover {
+.navbarExpandedItem:hover {
     cursor: pointer;
-    border-bottom: 2px solid #16469f;
 }
 
 .navbar {
     transition: all 1s linear;
+}
+
+@media (max-width: 960px){
+    .navbarCollapse {
+        display: none;
+    }
+    .contactItem {
+        display: none;
+    }
+    .collapseIcon {
+        display: block;
+    }
+    .navExpanded {
+        display: flex;
+    }
 }
 
 .dropdownNav:hover .dropdownContent {display: block;}

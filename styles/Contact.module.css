@@ -1,0 +1,82 @@
+.hero {
+    min-height: 40vh;
+    background: url('/img/contact.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 5px solid #16469f;
+}
+
+.title {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0,0,0,0.8);
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.intro {
+    margin: 4rem;
+    margin-bottom: 2rem;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm {
+    width: 50%;
+    margin: 0 2rem 2rem 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactForm input {
+    height: 3rem;
+    padding: 1rem;
+    margin: 0.4rem;
+    border: none; 
+    outline: none;
+    border-bottom: 1px solid #16469f ;
+    
+}
+
+.contactForm textarea {
+    resize: none;
+    border: 1px solid #16469f;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.4rem;
+    outline: #16469f;
+}
+
+.formBtn {
+    align-self: center;
+    text-align: center;
+    width: 40%;
+    margin: 1rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: #16469f;
+    border-radius: 5px;
+}
+
+.formBtn:hover {
+    background-color: #1852bd;
+    box-shadow: 0px 0px 3px #4e4e4e;
+  }
+
+@media (max-width: 960px) {
+    .contactForm {
+        width: 100%
+    }
+}

@@ -2,6 +2,8 @@ import React from 'react';
 import Prismic from "prismic-javascript";
 import { Client } from '../prismic-configuration'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+import BlogCard from '../components/BlogCard'
 import styles from '../styles/Blog.module.css'
 
 
@@ -10,17 +12,26 @@ export default function Blog({ props }) {
     return (
         <div className={styles.container}>
             <Header />
-            <h1>Blog Page</h1>
             <div className={styles.blogsContainer}>
-                {props.results.map((blog) => (
-                    <div className={styles.blogCard}>
-                        <h3>{blog.data.title[0].text}</h3>
-                        <img src={blog.data.blog_image.url} height='400px' />
-                        <p>{blog.data.blog_content[0].text}</p>
-                    </div>
+                <div className={styles.leftCol}>
+                    {props.results.map((blog) => (
+                        // <div className={styles.blogCard}>
+                        //     <h3>{blog.data.title[0].text}</h3>
+                        //     <img src={blog.data.blog_image.url} height='400px' />
+                        //     <p>{blog.data.blog_content[0].text}</p>
+                        // </div>
+                        <BlogCard
+                            img={blog.data.blog_image.url}
+                            title={blog.data.title[0].text}
+                            text={blog.data.blog_content[0].text} />
 
-                ))}
+                    ))}
+                </div>
+                <div className={styles.rightCol}>
+
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }
