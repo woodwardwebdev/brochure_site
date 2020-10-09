@@ -36,6 +36,11 @@
     width: 300px
   }
 
+  .contactSocials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .socialIcon {
     padding: 20px;
     color: white;
