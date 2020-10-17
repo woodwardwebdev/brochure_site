@@ -1,7 +1,7 @@
 
 import Prismic from 'prismic-javascript'
 
-export const apiEndpoint = process.env.PRISMIC_KEY
+export const apiEndpoint = process.env.NEXT_PUBLIC_PRISMIC_KEY
 export const accessToken = ''
 
 // process.env.PRISMIC_KEY
