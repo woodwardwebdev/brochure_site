@@ -1,7 +1,10 @@
+
 import Prismic from 'prismic-javascript'
 
-export const apiEndpoint = 'https://colintestsprismic.cdn.prismic.io/api/v2'
+export const apiEndpoint = process.env.PRISMIC_KEY
 export const accessToken = ''
+
+// process.env.PRISMIC_KEY
 
 // Client method to query documents from the Prismic repo
 export const Client = (req = null) => (
